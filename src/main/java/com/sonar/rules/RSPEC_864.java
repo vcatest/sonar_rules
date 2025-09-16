@@ -7,7 +7,7 @@ public class RSPEC_864 {
 
         if (a > b || c < d || a == d) { /* ... */ }
         if (a > b && c < d || a == b) { /* Noncompliant */ }
-        if (a = f(b, c) == 1) { /* Noncompliant; == evaluated first */ }
+        if ((a = f(b, c)) == 1) { /* Noncompliant; == evaluated first */ }
     }
 
     private int d = 4;

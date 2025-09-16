@@ -59,7 +59,7 @@ class ChatModel {
 class CompletionResult {
     public java.util.List<Choice> choices() { return java.util.Collections.emptyList(); }
     class Choice {
-        public java.util.List<Message> message() { return java.util.Collections.emptyList(); }
+        public Message message() { return new Message(); }
     }
     class Message {
         public java.util.List<String> content() { return java.util.Collections.emptyList(); }
